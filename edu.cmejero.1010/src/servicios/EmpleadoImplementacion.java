@@ -1,7 +1,6 @@
 package servicios;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 import controladores.Inicio;
@@ -36,9 +35,9 @@ public class EmpleadoImplementacion implements EmpleadoInterfaz {
 
 		} while (respuesta.equalsIgnoreCase("s"));
 
-		for (ClienteDto clientes : Inicio.listaClientes) {
+		for (VentaDto venta : Inicio.listaVentas) {
 
-			System.out.println(clientes.toString());
+			System.out.println(venta.toString());
 		}
 
 	}
